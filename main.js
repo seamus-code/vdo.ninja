@@ -5131,9 +5131,9 @@ async function main() {
 		if (!session.mediamtx.includes(".") && !session.mediamtx.includes("localhost")){
 			session.mediamtx += ".com";
 		}
-		if (!session.mediamtx.includes(":")){
-			session.mediamtx += ":8889";
-		}
+		// if (!session.mediamtx.includes(":")){
+		//	session.mediamtx += ":8889";
+		// }
 		if (!session.whipOutput){
 			session.whipOutput = "https://"+session.mediamtx+"/"+session.streamID+"/whip";
 		}
